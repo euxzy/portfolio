@@ -6,7 +6,7 @@
 
 @layer base {
   * {
-    @apply font-lexend;
+    @apply cursor-none font-lexend;
   }
   body {
     @apply bg-primary-dark text-primary-light;
