@@ -1,3 +1,4 @@
+import Footer from '../components/Footer/Footer';
 import Navbar from '../components/Navbar/Navbar';
 
 export default function Home() {
@@ -17,6 +18,8 @@ export default function Home() {
           <div className="-ml-1 text-7xl font-semibold">euxzy</div>
         </div>
       </div>
+
+      <Footer />
     </>
   );
 }
