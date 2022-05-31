@@ -1,16 +1,49 @@
-import Layouts from '../../components/Layouts/Layouts';
+import Layouts from '../../components/Layouts';
 
 export default function Contact() {
   return (
     <>
-      <Layouts pageTitle="| Contact">
-        <div className="flex h-screen w-full items-center justify-evenly">
+      <Layouts pageTitle=" | Contact">
+        <div className="relative flex h-screen w-full items-center justify-evenly overflow-hidden">
+          <div className="absolute bottom-0 left-0 text-9xl font-bold text-secondary-dark">CONTACT</div>
           <div className="w-1/3 text-right">
-            <div>
-              <h4 className="text-sm font-extralight">Contact</h4>
-              <h3 className="text-lg font-normal">+62 858 xxxx xxxx</h3>
+            <div className="my-4 flex justify-end">
+              <div className="mr-12">
+                <h4 className="text-lg">Email</h4>
+                <h3 className="text-sm font-normal">mhd.rijal203@gmail.com</h3>
+              </div>
+              <div className="h-12 w-12 bg-white"></div>
+            </div>
+            <div className="my-4 flex justify-end">
+              <div className="mr-12">
+                <h4 className="text-lg">Phone</h4>
+                <h3 className="text-sm font-normal">+62 858-6408-9403</h3>
+              </div>
+              <div className="h-12 w-12 bg-white"></div>
+            </div>
+            <div className="my-4 flex justify-end">
+              <div className="mr-12">
+                <h4 className="text-lg">Github</h4>
+                <h3 className="text-sm font-normal">github.com/euxzy</h3>
+              </div>
+              <div className="h-12 w-12 bg-white"></div>
+            </div>
+            <div className="my-4 flex justify-end">
+              <div className="mr-12">
+                <h4 className="text-lg">Facebook</h4>
+                <h3 className="text-sm font-normal">facebook.com/mhd.rijal.161</h3>
+              </div>
+              <div className="h-12 w-12 bg-white"></div>
+            </div>
+            <div className="my-4 flex justify-end">
+              <div className="mr-12">
+                <h4 className="text-lg">Instagram</h4>
+                <h3 className="text-sm font-normal">instagram.com/_mhdrijal</h3>
+              </div>
+              <div className="h-12 w-12 bg-white"></div>
             </div>
           </div>
+
           <div className="w-1/3">
             <form>
               <div className="w-4/5">
