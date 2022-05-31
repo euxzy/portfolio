@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import '../styles/globals.css';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 function MyApp({ Component, pageProps }) {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -24,7 +26,9 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <div onMouseEnter={cursorIn} onMouseLeave={cursorOut}>
+        <Header />
         <Component {...pageProps} />
+        <Footer />
       </div>
 
       <motion.div className="pointer-events-none fixed left-0 top-0 z-50 h-16 w-16 rounded-full bg-primary-light" variants={variants} animate={customCursor} />
