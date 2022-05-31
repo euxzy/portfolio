@@ -1,4 +1,4 @@
-import Layouts from '../components/Layouts/Layouts';
+import Layouts from '../components/Layouts';
 
 export default function Home() {
   return (
@@ -14,6 +14,7 @@ export default function Home() {
           <div className="w-1/3">
             <div className="-mb-5 text-base font-normal">Hi! My name is</div>
             <div className="-ml-1 text-7xl font-semibold">euxzy</div>
+            <div className="text-sm font-thin">Front-end Dev | Network Engineer</div>
           </div>
         </div>
       </Layouts>
