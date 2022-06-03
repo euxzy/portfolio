@@ -16,8 +16,8 @@ function MyApp({ Component, pageProps }) {
   }, []);
 
   const variants = {
-    default: { x: mousePosition.x - 32, y: mousePosition.y - 32 },
-    inverse: { x: mousePosition.x - 32, y: mousePosition.y - 32, mixBlendMode: 'difference' },
+    default: { x: mousePosition.x - 22, y: mousePosition.y - 22 },
+    inverse: { x: mousePosition.x - 22, y: mousePosition.y - 22, mixBlendMode: 'difference' },
   };
 
   const cursorIn = () => setCustomCursor('inverse');
@@ -31,7 +31,7 @@ function MyApp({ Component, pageProps }) {
         <Footer />
       </div>
 
-      <motion.div className="pointer-events-none fixed left-0 top-0 z-50 h-16 w-16 rounded-full bg-primary-light" variants={variants} animate={customCursor} />
+      <motion.div className="pointer-events-none fixed left-0 top-0 z-50 h-11 w-11 rounded-full bg-primary-light" variants={variants} animate={customCursor} />
     </>
   );
 }
