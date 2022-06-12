@@ -31,10 +31,10 @@ export default function Header() {
         </div>
 
         <div className={`absolute -mb-36 md:relative md:mb-0 md:mr-10 md:w-11/12 lg:mr-40 lg:w-1/2 ${!open ? 'hide' : 'show'}`}>
-          <nav className="flex flex-col justify-evenly rounded-md bg-secondary-dark bg-opacity-75 p-5 font-medium backdrop-blur-md transition-all duration-300 md:mr-0 md:w-full md:flex-row md:rounded-none md:bg-transparent md:p-0 md:backdrop-blur-none">
+          <nav className="navbar">
             {navLinks.map((link) => (
               <Link key={link.title} href={link.path}>
-                <a className={`transition-all duration-500 hover:text-primary-light ${router.pathname === link.path ? 'text-primary-light' : ''}`}>{link.title}</a>
+                <a className={`nav-items ${router.pathname === link.path ? 'text-primary-light' : ''}`}>{link.title}</a>
               </Link>
             ))}
           </nav>

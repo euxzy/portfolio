@@ -6,8 +6,8 @@ export default function Works() {
   return (
     <>
       <Layouts pageTitle=" | Works">
-        <div className="relative flex w-full items-center justify-center py-40 md:h-screen md:overflow-hidden">
-          <div className="title-page">WORKS</div>
+        <section className="relative flex w-full items-center justify-center py-40 md:h-screen md:overflow-hidden">
+          <span className="title-page">WORKS</span>
 
           <div className="relative flex w-4/5 flex-wrap items-center justify-evenly">
             {projects.map((project) => (
@@ -16,7 +16,7 @@ export default function Works() {
               </div>
             ))}
           </div>
-        </div>
+        </section>
       </Layouts>
     </>
   );
