@@ -5,6 +5,10 @@
 @tailwind utilities;
 
 @layer base {
+  /* custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 0;
+  }
   * {
     @apply cursor-none font-lexend;
   }

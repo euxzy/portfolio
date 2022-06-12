@@ -9,10 +9,10 @@ function MyApp({ Component, pageProps }) {
   const [customCursor, setCustomCursor] = useState('default');
 
   useEffect(() => {
-    const mouseMove = (e) => {
-      setMousePosition({ x: e.clientX, y: e.clientY });
-    };
+    const mouseMove = (e) => setMousePosition({ x: e.clientX, y: e.clientY });
+
     window.addEventListener('mousemove', mouseMove);
+    return () => window.removeEventListener('mousemove', mouseMove);
   }, []);
 
   const variants = {
