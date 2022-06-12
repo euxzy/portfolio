@@ -1,8 +1,7 @@
+import { Contacts } from '../../data/Contacts';
 import Layouts from '../../components/Layouts';
 
-export default function Contact() {
-  const contacts = require('../../data/contacts.json');
-
+const Contact = () => {
   return (
     <>
       <Layouts pageTitle=" | Contact">
@@ -10,7 +9,7 @@ export default function Contact() {
           <span className="title-page">CONTACT</span>
 
           <div className="relative my-10 w-9/12 text-right md:my-0 md:w-2/5">
-            {contacts.map((contact) => (
+            {Contacts.map((contact) => (
               <a href={contact.href} target="_blank" key={contact.id} className="my-4 flex justify-end fill-secondary-light transition-all duration-500 hover:fill-primary-light hover:text-primary-light">
                 <div className="mr-8">
                   <h4 className="text-base">{contact.name}</h4>
@@ -39,4 +38,6 @@ export default function Contact() {
       </Layouts>
     </>
   );
-}
+};
+
+export default Contact;

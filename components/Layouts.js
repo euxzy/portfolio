@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-export default function Layouts(props) {
+const Layouts = (props) => {
   const { children, pageTitle } = props;
   return (
     <>
@@ -11,4 +11,6 @@ export default function Layouts(props) {
       <>{children}</>
     </>
   );
-}
+};
+
+export default Layouts;

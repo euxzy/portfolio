@@ -1,8 +1,8 @@
 import { useEffect, useRef } from 'react';
+import { Projects } from '../../data/Projects';
 import Layouts from '../../components/Layouts';
-import { Projects } from '../../data/projects';
 
-export default function Works() {
+const Works = () => {
   const ref = useRef(null);
 
   useEffect(() => {
@@ -48,4 +48,6 @@ export default function Works() {
       </Layouts>
     </>
   );
-}
+};
+
+export default Works;

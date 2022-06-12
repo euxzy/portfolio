@@ -1,4 +1,4 @@
-export default function Footer() {
+const Footer = () => {
   return (
     <footer className="fixed right-0 -bottom-20 z-40 flex w-full justify-end pb-28 md:bottom-0">
       <div className="flex w-1/2 items-baseline justify-end">
@@ -10,4 +10,6 @@ export default function Footer() {
       </div>
     </footer>
   );
-}
+};
+
+export default Footer;

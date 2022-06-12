@@ -1,6 +1,6 @@
 import Layouts from '../components/Layouts';
 
-export default function Home() {
+const Home = () => {
   return (
     <>
       <Layouts>
@@ -22,4 +22,6 @@ export default function Home() {
       </Layouts>
     </>
   );
-}
+};
+
+export default Home;

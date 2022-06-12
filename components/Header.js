@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { useRouter } from 'next/router';
 
-export default function Header() {
+const Header = () => {
   const [open, setOpen] = useState(false);
 
   const router = useRouter();
@@ -42,4 +42,6 @@ export default function Header() {
       </div>
     </header>
   );
-}
+};
+
+export default Header;

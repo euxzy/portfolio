@@ -1,8 +1,7 @@
+import { Skills } from '../../data/Skills';
 import Layouts from '../../components/Layouts';
 
-export default function About() {
-  const skills = require('../../data/skills.json');
-
+const About = () => {
   return (
     <>
       <Layouts pageTitle=" | About">
@@ -12,7 +11,7 @@ export default function About() {
           <div className="relative order-2 flex w-3/4 flex-col items-end justify-end md:order-1 md:w-1/3">
             <div className="my-5 mr-2 text-left font-semibold text-primary-light">My Skills</div>
             <div className="flex w-4/5 flex-wrap justify-evenly">
-              {skills.map((skill) => (
+              {Skills.map((skill) => (
                 <div key={skill.id} className="skills-icon">
                   <svg className="p-2" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d={skill.svg} />
@@ -29,4 +28,6 @@ export default function About() {
       </Layouts>
     </>
   );
-}
+};
+
+export default About;
