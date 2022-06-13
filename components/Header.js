@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { useRouter } from 'next/router';
+import { motion } from 'framer-motion';
+import { AnimationHeaderFooter } from './Animations';
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -14,7 +16,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed left-0 -top-12 z-40 flex w-full justify-between pt-24 md:top-0">
+    <motion.header {...AnimationHeaderFooter} className="fixed left-0 -top-12 z-40 flex w-full justify-between pt-24 md:top-0">
       <div className="flex w-1/2 items-baseline">
         <div className="w-3/5 md:w-2/5">
           <div className="line-header mb-1 h-1 w-1/4" />
@@ -40,7 +42,7 @@ const Header = () => {
           </nav>
         </div>
       </div>
-    </header>
+    </motion.header>
   );
 };
 
