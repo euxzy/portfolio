@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Layouts from '../components/Layouts';
 
 const Home = () => {
@@ -10,7 +11,11 @@ const Home = () => {
           <div className="relative order-2 flex w-1/2 justify-end md:order-1 md:w-1/3">
             <div className="card-home absolute -rotate-12 bg-[#464646]" />
             <div className="card-home absolute -rotate-3 bg-secondary-light" />
-            <div className="card-home relative rotate-2 bg-primary-light" />
+            <div className="card-home relative rotate-2 bg-primary-light">
+              <div className="flex h-full w-full items-center justify-center">
+                <Image src="/images/profile/profile.png" width={500} height={500} alt="Muhamad Rijal" />
+              </div>
+            </div>
           </div>
 
           <div className="relative order-1 w-1/3 md:order-2">

@@ -60,7 +60,7 @@
 
   /* card and icon */
   .card-home {
-    @apply mt-20 h-80 w-full rounded-xl md:h-72 md:w-3/5 lg:h-96;
+    @apply mt-20 h-64 w-full rounded-xl md:h-72 md:w-64 lg:h-80;
   }
   .skills-icon {
     @apply my-2 ml-4 h-14 w-14 rounded-lg fill-secondary-light transition-all duration-500 hover:bg-secondary-dark hover:fill-primary-light;

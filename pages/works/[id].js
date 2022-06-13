@@ -9,10 +9,12 @@ const ProjectDetail = () => {
 
   return (
     <Layouts pageTitle=" | Works">
-      <div className="flex h-screen w-full flex-col items-center justify-center">
+      <section className="flex h-screen w-full flex-col items-center justify-center">
+        <span className="title-page">WORKS</span>
+
         <h1 className="mb-5 w-2/3 text-center text-5xl text-primary-light md:w-1/2">Details {getProject.name}</h1>
         <p className="w-3/5 text-justify">{getProject.description}</p>
-      </div>
+      </section>
     </Layouts>
   );
 };
