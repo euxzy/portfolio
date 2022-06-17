@@ -27,22 +27,24 @@ const Works = () => {
 
           <div className="fixed left-1/2 top-[30%] flex md:left-1/4" ref={ref}>
             {Projects.map((project) => (
-              <motion.div {...AnimationCard} key={project.id} className="mx-12 flex w-72 flex-col items-center justify-center rounded-md border-4 border-primary-light bg-primary-light p-[2px]">
-                <Link href={`/works/${project.slug}`}>
-                  <a className="relative h-44 w-full overflow-hidden rounded-md bg-primary-dark">
-                    <Image src={`/images/projects/${project.img}.png`} layout="fill" alt={project.name} className="relative transition-all duration-500 hover:scale-125" />
-                  </a>
-                </Link>
-                <div className="py-2 text-xl font-medium text-primary-dark">{project.name}</div>
-                <div className="flex w-full justify-between px-3 pt-1 pb-4">
-                  <a href={project.demo} target="_blank" rel="noreferrer">
-                    <span className="rounded-md border-2 border-primary-dark px-3 py-2 font-semibold text-primary-dark transition-all duration-500 hover:bg-primary-dark hover:text-primary-light">View Demo</span>
-                  </a>
-                  <a href={project.sourceCode} target="_blank" rel="noreferrer">
-                    <span className="rounded-md border-2 border-primary-dark px-1 py-2 font-semibold text-primary-dark transition-all duration-500 hover:bg-primary-dark hover:text-primary-light">Source Code</span>
-                  </a>
-                </div>
-              </motion.div>
+              <div key={project.id}>
+                <motion.div {...AnimationCard} className="mx-12 flex w-72 flex-col items-center justify-center rounded-md border-4 border-primary-light bg-primary-light p-[2px]">
+                  <Link href={`/works/${project.slug}`}>
+                    <a className="relative h-44 w-full overflow-hidden rounded-md bg-primary-dark">
+                      <Image src={`/images/projects/${project.img}.png`} layout="fill" alt={project.name} className="relative transition-all duration-500 hover:scale-125" />
+                    </a>
+                  </Link>
+                  <div className="py-2 text-xl font-medium text-primary-dark">{project.name}</div>
+                  <div className="flex w-full justify-between px-3 pt-1 pb-4">
+                    <a href={project.demo} target="_blank" rel="noreferrer">
+                      <span className="rounded-md border-2 border-primary-dark px-3 py-2 font-semibold text-primary-dark transition-all duration-500 hover:bg-primary-dark hover:text-primary-light">View Demo</span>
+                    </a>
+                    <a href={project.sourceCode} target="_blank" rel="noreferrer">
+                      <span className="rounded-md border-2 border-primary-dark px-1 py-2 font-semibold text-primary-dark transition-all duration-500 hover:bg-primary-dark hover:text-primary-light">Source Code</span>
+                    </a>
+                  </div>
+                </motion.div>
+              </div>
             ))}
           </div>
 
