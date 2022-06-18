@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { useRouter } from 'next/router';
 import { motion } from 'framer-motion';
-import { AnimationHeaderFooter } from './Animations';
+import { FadeAnimation, LineAnimation } from './Animations';
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -16,12 +16,12 @@ const Header = () => {
   ];
 
   return (
-    <motion.header {...AnimationHeaderFooter} className="fixed left-0 -top-12 z-40 flex w-full justify-between pt-24 md:top-0">
+    <motion.header {...FadeAnimation} className="fixed left-0 -top-12 z-40 flex w-full justify-between pt-24 md:top-0">
       <div className="flex w-1/2 items-baseline">
         <div className="w-3/5 md:w-2/5">
-          <div className="line-header mb-1 h-1 w-1/4" />
-          <div className="line-header mb-1 h-1 w-full" />
-          <div className="line-header h-1 w-2/3" />
+          <motion.div {...LineAnimation} animate={{ width: '25%' }} className="line-header mb-1 h-1" />
+          <motion.div {...LineAnimation} animate={{ width: '100%' }} className="line-header mb-1 h-1" />
+          <motion.div {...LineAnimation} animate={{ width: '67%' }} className="line-header h-1" />
         </div>
       </div>
 

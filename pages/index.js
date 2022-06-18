@@ -1,35 +1,33 @@
-import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
-import { AnimationContent, AnimationTitle } from '../components/Animations';
-import Layouts from '../components/Layouts';
+import Layouts from '@/components/Layouts';
+import { motion } from 'framer-motion';
+import { ContentAnimation, FadeAnimation, CardHomeAnimation } from '@/components/Animations';
 
 const Home = () => {
   return (
-    <AnimatePresence>
-      <Layouts>
-        <section className="relative flex w-full flex-col items-center justify-evenly py-40 md:h-screen md:flex-row md:overflow-hidden">
-          <motion.span {...AnimationTitle} className="title-page">
-            EUXZY
-          </motion.span>
+    <Layouts>
+      <section className="relative flex w-full flex-col items-center justify-evenly py-40 md:h-screen md:flex-row md:overflow-hidden">
+        <motion.span {...FadeAnimation} className="title-page">
+          EUXZY
+        </motion.span>
 
-          <motion.div {...AnimationContent} className="relative order-2 flex w-1/2 justify-end md:order-1 md:w-1/3">
-            <div className="card-home absolute -rotate-12 bg-[#464646]" />
-            <div className="card-home absolute -rotate-3 bg-secondary-light" />
-            <div className="card-home relative rotate-2 bg-primary-light">
-              <div className="flex h-full w-full items-center justify-center overflow-hidden rounded-xl">
-                <Image src="/images/profile/profile.png" width={500} height={500} alt="Muhamad Rijal" />
-              </div>
+        <motion.div {...ContentAnimation} className="relative order-2 flex w-1/2 justify-end md:order-1 md:w-1/3">
+          <motion.div {...CardHomeAnimation} animate={{ rotate: -12 }} className="card-home absolute bg-[#464646]" />
+          <motion.div {...CardHomeAnimation} animate={{ rotate: -3 }} className="card-home absolute bg-secondary-light" />
+          <motion.div {...CardHomeAnimation} animate={{ rotate: 2 }} className="card-home relative bg-primary-light">
+            <div className="relative flex h-full w-full items-center justify-center overflow-hidden rounded-xl">
+              <Image src="/images/profile/profile.png" layout="intrinsic" width={500} height={500} alt="Muhamad Rijal" className="relative" />
             </div>
           </motion.div>
+        </motion.div>
 
-          <motion.div {...AnimationContent} className="relative order-1 w-1/3 md:order-2">
-            <h3 className="-mb-5 text-base font-normal">Hi! My name is</h3>
-            <h1 className="-ml-1 mb-1 text-7xl font-bold text-primary-light">euxzy</h1>
-            <h4 className="text-sm font-light transition-all duration-500 hover:text-primary-light">Front-end Dev | Network Engineer</h4>
-          </motion.div>
-        </section>
-      </Layouts>
-    </AnimatePresence>
+        <motion.div {...ContentAnimation} className="relative order-1 w-1/3 md:order-2">
+          <h3 className="-mb-5 text-base font-normal">Hi! My name is</h3>
+          <h1 className="-ml-1 mb-1 text-7xl font-bold text-primary-light">euxzy</h1>
+          <h4 className="text-sm font-light transition-all duration-500 hover:text-primary-light">Front-end Dev | Network Engineer</h4>
+        </motion.div>
+      </section>
+    </Layouts>
   );
 };
 
