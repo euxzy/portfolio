@@ -31,9 +31,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       {loading ? (
-        <>
-          <LoadingPage />
-        </>
+        <LoadingPage />
       ) : (
         <>
           <div onMouseEnter={cursorIn} onMouseLeave={cursorOut}>
