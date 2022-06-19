@@ -29,9 +29,9 @@ const Works = () => {
             <div key={project.id}>
               <motion.div {...ProjectCardAnimation} className="mx-12 flex w-72 flex-col items-center justify-center rounded-md border-4 border-primary-light bg-primary-light p-[2px]">
                 <Link href={`/works/${project.slug}`}>
-                  <a className="relative h-44 w-full overflow-hidden rounded-md bg-primary-dark">
+                  <motion.a {...FadeAnimation} className="relative h-44 w-full overflow-hidden rounded-md bg-primary-dark">
                     <Image src={`/images/projects/${project.img}.png`} layout="fill" alt={project.name} className="relative transition-all duration-500 hover:scale-125" />
-                  </a>
+                  </motion.a>
                 </Link>
                 <div className="py-2 text-xl font-medium text-primary-dark">{project.name}</div>
                 <div className="flex w-full justify-between px-3 pt-1 pb-4">
