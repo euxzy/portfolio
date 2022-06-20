@@ -32,7 +32,7 @@ const Header = () => {
           <div className="hamburger-line w-2/3" />
         </div>
 
-        <div className={`absolute -mb-36 md:relative md:mb-0 md:mr-10 md:w-11/12 lg:mr-40 lg:w-1/2 ${!open ? 'hide' : 'show'}`}>
+        <div className={`absolute top-12 right-0 md:relative md:top-0 md:mr-10 md:w-11/12 lg:mr-40 lg:w-1/2 ${!open ? 'hide' : 'show'}`}>
           <nav className="navbar">
             {navLinks.map((link) => (
               <Link key={link.title} href={link.path}>
