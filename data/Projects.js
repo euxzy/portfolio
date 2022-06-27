@@ -5,7 +5,7 @@ export const Projects = [
     slug: 'sgcid',
     img: 'sgcid',
     demo: 'https://sgcid.mhdrijal.my.id',
-    sourceCode: 'https://github.com/euxzy/sgcid',
+    backHome: 'https://hansalrl.vercel.app/',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla alias accusantium commodi quia rerum reprehenderit similique, ipsa cupiditate vel voluptates sapiente, unde ducimus dignissimos saepe consequuntur possimus maxime voluptatibus laudantium.',
   },
@@ -15,7 +15,7 @@ export const Projects = [
     slug: 'weather-app',
     img: 'weather-app',
     demo: 'https://weather.mhdrijal.my.id',
-    sourceCode: 'https://github.com/euxzy/weather-app',
+    backHome: 'https://hansalrl.vercel.app/',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla alias accusantium commodi quia rerum reprehenderit similique, ipsa cupiditate vel voluptates sapiente, unde ducimus dignissimos saepe consequuntur possimus maxime voluptatibus laudantium.',
   },
@@ -25,7 +25,7 @@ export const Projects = [
     slug: 'jadwal-sholat',
     img: 'jadwal-sholat',
     demo: 'https://jadwal-sholat.mhdrijal.my.id',
-    sourceCode: 'https://github.com/euxzy/jadwal-sholat',
+    backHome: 'https://hansalrl.vercel.app/',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla alias accusantium commodi quia rerum reprehenderit similique, ipsa cupiditate vel voluptates sapiente, unde ducimus dignissimos saepe consequuntur possimus maxime voluptatibus laudantium.',
   },
@@ -35,7 +35,7 @@ export const Projects = [
     slug: 'warung-sunda',
     img: 'warung-sunda',
     demo: 'https://',
-    sourceCode: 'https://github.com/euxzy/warung-sunda',
+    backHome: 'https://hansalrl.vercel.app/',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla alias accusantium commodi quia rerum reprehenderit similique, ipsa cupiditate vel voluptates sapiente, unde ducimus dignissimos saepe consequuntur possimus maxime voluptatibus laudantium.',
   },
@@ -45,7 +45,7 @@ export const Projects = [
     slug: 'coming-soon-project',
     img: 'coming-soon',
     demo: 'https://',
-    sourceCode: 'https://',
+    backHome: 'https://',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla alias accusantium commodi quia rerum reprehenderit similique, ipsa cupiditate vel voluptates sapiente, unde ducimus dignissimos saepe consequuntur possimus maxime voluptatibus laudantium.',
   },
