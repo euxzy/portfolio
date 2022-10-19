@@ -12,7 +12,7 @@ const Contact = () => {
     const scriptURL = process.env.NEXT_PUBLIC_GOOGLE_SHEETS_URL;
     const form = document.forms['contact-form'];
 
-    const sumbitForm = (e) => {
+    const submitForm = (e) => {
       e.preventDefault();
       fetch(scriptURL, { method: 'POST', body: new FormData(form) })
         .then(() => {
@@ -26,8 +26,8 @@ const Contact = () => {
         });
     };
 
-    form.addEventListener('submit', sumbitForm);
-    return () => form.removeEventListener('submit', sumbitForm);
+    form.addEventListener('submit', submitForm);
+    return () => form.removeEventListener('submit', submitForm);
   }, []);
 
   return (
