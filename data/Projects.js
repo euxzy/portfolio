@@ -7,46 +7,56 @@ export const Projects = [
     demo: 'https://sgcid.mhdrijal.my.id',
     sourceCode: 'https://github.com/euxzy/sgcid',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla alias accusantium commodi quia rerum reprehenderit similique, ipsa cupiditate vel voluptates sapiente, unde ducimus dignissimos saepe consequuntur possimus maxime voluptatibus laudantium.',
+      'SGCID adalah .',
   },
   {
     id: 2,
+    name: 'Ceritain',
+    slug: 'ceritain',
+    img: 'ceritain',
+    demo: 'https://ceritain.otakuline.id',
+    sourceCode: 'https://github.com/euxzy/ceritain',
+    description:
+      'Ceritain adalah sebuah website dimana kita bisa menceritakan semua hal yang ingin kita ceritakan. (Project ini masih dalam tahap development namun sudah bisa dipakai)',
+  },
+  {
+    id: 3,
+    name: 'API Ceritain',
+    slug: 'api-ceritain',
+    img: 'api-ceritain',
+    demo: '#',
+    sourceCode: 'https://github.com/euxzy/api-ceritain',
+    description:
+      'API Ceritain adalah API yang digunakan di website Ceritain.',
+  },
+  {
+    id: 4,
     name: 'Weather App',
     slug: 'weather-app',
     img: 'weather-app',
     demo: 'https://weather.mhdrijal.my.id',
     sourceCode: 'https://github.com/euxzy/weather-app',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla alias accusantium commodi quia rerum reprehenderit similique, ipsa cupiditate vel voluptates sapiente, unde ducimus dignissimos saepe consequuntur possimus maxime voluptatibus laudantium.',
-  },
-  {
-    id: 3,
-    name: 'Jadwal Sholat',
-    slug: 'jadwal-sholat',
-    img: 'jadwal-sholat',
-    demo: 'https://jadwal-sholat.mhdrijal.my.id',
-    sourceCode: 'https://github.com/euxzy/jadwal-sholat',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla alias accusantium commodi quia rerum reprehenderit similique, ipsa cupiditate vel voluptates sapiente, unde ducimus dignissimos saepe consequuntur possimus maxime voluptatibus laudantium.',
-  },
-  {
-    id: 4,
-    name: 'Warung Sunda',
-    slug: 'warung-sunda',
-    img: 'warung-sunda',
-    demo: 'https://',
-    sourceCode: 'https://github.com/euxzy/warung-sunda',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla alias accusantium commodi quia rerum reprehenderit similique, ipsa cupiditate vel voluptates sapiente, unde ducimus dignissimos saepe consequuntur possimus maxime voluptatibus laudantium.',
+      'Weather App adalah sebuah website untuk melihat berapa suhu pada kota tertentu.',
   },
   {
     id: 5,
+    name: 'Bank Metrics',
+    slug: 'metrics',
+    img: 'metrics',
+    demo: 'https://metrics-fe.fly.dev',
+    sourceCode: 'https://github.com/Strayneko/Bank-Metrics-FrontEnd',
+    description:
+      'Bank Metrics adalah sebuah aplikasi yang bisa digunakan untuk mengecek apakah pengajuan pinjaman kita disetujui atau tidak oleh bank yang terdaftar di aplikasi ini.',
+  },
+  {
+    id: 6,
     name: 'Coming Soon Project',
     slug: 'coming-soon-project',
     img: 'coming-soon',
-    demo: 'https://',
-    sourceCode: 'https://',
+    demo: '#',
+    sourceCode: '#',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla alias accusantium commodi quia rerum reprehenderit similique, ipsa cupiditate vel voluptates sapiente, unde ducimus dignissimos saepe consequuntur possimus maxime voluptatibus laudantium.',
+      'Nantikan project-project mendatang lainnya.',
   },
 ];
