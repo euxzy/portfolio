@@ -4,7 +4,7 @@ export const Projects = [
     name: 'Space Game Community ID',
     slug: 'sgcid',
     img: 'sgcid',
-    demo: 'https://sgcid.mhdrijal.my.id',
+    demo: '#',
     sourceCode: 'https://github.com/euxzy/sgcid',
     description:
       'SGCID adalah .',
@@ -14,7 +14,7 @@ export const Projects = [
     name: 'Ceritain',
     slug: 'ceritain',
     img: 'ceritain',
-    demo: 'https://ceritain.otakuline.id',
+    demo: 'https://ceritain.vercel.app',
     sourceCode: 'https://github.com/euxzy/ceritain',
     description:
       'Ceritain adalah sebuah website dimana kita bisa menceritakan semua hal yang ingin kita ceritakan. (Project ini masih dalam tahap development namun sudah bisa dipakai)',
@@ -34,7 +34,7 @@ export const Projects = [
     name: 'Weather App',
     slug: 'weather-app',
     img: 'weather-app',
-    demo: 'https://weather.mhdrijal.my.id',
+    demo: '#',
     sourceCode: 'https://github.com/euxzy/weather-app',
     description:
       'Weather App adalah sebuah website untuk melihat berapa suhu pada kota tertentu.',
